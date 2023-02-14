@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id "io.freefair.lombok" version "6.6.1"
+}
+
+group 'dev.clairton.bukkit'
+version '1.0-SNAPSHOT'
+
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // There is no official spigot public maven repository that contains NMS, Due to legal reasons.
+    compileOnly files("./libs/spigot-1.8.8.jar")
+}
+
+jar {
+    archiveFileName = "Kits.jar"
+}

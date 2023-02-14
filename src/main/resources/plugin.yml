@@ -1,0 +1,8 @@
+name: kits
+description: Simple skills plugin
+main: dev.clairton.bukkit.kits.Kits
+version: 1.0.0
+api-version: 1.8
+commands:
+  kit:
+    description: Select your skill

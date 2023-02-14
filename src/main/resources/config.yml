@@ -1,0 +1,112 @@
+# Somente para mostrar o sistema de paginação.
+itemsPerPage: 2
+
+messages:
+  errors:
+    same: "&cVocê já está utilizando essa habilidade."
+    unknown: "&cNão foi possível encontrar esse kit."
+  cooldown: "&cVocê precisa esperar %time% para usar esse kit novamente."
+  canUse: "&aVocê já pode usar a habilidade %name% novamente."
+  reload: "&aConfiguração recarregada com sucesso."
+  abilities:
+    voar:
+      warn: "&cHá um passaro por perto."
+      countdown: "&cO seu voo será desligado em %time% segundos."
+    lançador:
+      launched: "&aVocê jogou uma poção de %effect%."
+
+abilities:
+  nenhum:
+    selector:
+      type: BARRIER
+      name: "&aNenhum"
+      lore:
+        - "&7Você não precisa de habilidades"
+        - "&7especiais para ser o melhor."
+  voar:
+    notifyRadius: 20
+    cooldown: 20
+    duration: 10
+    selector:
+      type: FEATHER
+      name: "&aVoar"
+      lore:
+        - "&7Seja um passaro"
+        - "&7por alguns segundos."
+    skill:
+      type: FEATHER
+      name: "&aVoar"
+  lenhador:
+    blocks: 200
+    autoPickup: true
+    selector:
+      type: WOOD_AXE
+      name: "&aLenhador"
+      lore:
+        - "&7Seja um lenhador"
+        - "&7(Descrição maravilhosa)."
+    skill:
+      type: WOOD_AXE
+      name: "&aTreecapitator"
+  lançador:
+    cooldown: 5
+    # Se essa opção estiver desligada, o clique esquerdo será sempre poções ruins, e clique direito poções boas.
+    randomBad: false
+    effects:
+      HEAL:
+        name: "Vida instantânea"
+        time: 20
+        amplifier: 1
+        isBad: false
+        percentage: 25
+      FIRE_RESISTANCE:
+        name: "Resistência a fogo"
+        time: 300
+        amplifier: 1
+        isBad: false
+        percentage: 25
+      REGENERATION:
+        name: "Regeneração"
+        time: 140
+        amplifier: 2
+        isBad: false
+        percentage: 25
+      SPEED:
+        name: "Velocidade"
+        time: 300
+        amplifier: 1
+        isBad: false
+        percentage: 25
+      HARM:
+        name: "Dano Instantâneo"
+        time: 5
+        amplifier: 1
+        isBad: true
+        percentage: 25
+      WEAKNESS:
+        name: "Fraqueza"
+        time: 120
+        amplifier: 1
+        isBad: true
+        percentage: 25
+      SLOW:
+        name: "Lentidão"
+        time: 120
+        amplifier: 1
+        isBad: true
+        percentage: 25
+      POISON:
+        name: "Veneno"
+        time: 120
+        amplifier: 1
+        isBad: true
+        percentage: 25
+    selector:
+      type: STICK
+      name: "&aLançador de Poções"
+      lore:
+        - "&7Lance poções boas em você"
+        - "&7e poções ruins em seus inimigos."
+    skill:
+      type: STICK
+      name: "&aEffect Launcher"
